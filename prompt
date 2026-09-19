@@ -1,0 +1,2 @@
+max@ws01:~/dz_linux$ export PS1='[\d]\u@\h '
+[Sat Sep 19]max@ws01 

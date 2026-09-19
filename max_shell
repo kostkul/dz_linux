@@ -1,0 +1,2 @@
+max@ws01:~/dz_linux$ echo $SHELL
+/usr/bin/bash
