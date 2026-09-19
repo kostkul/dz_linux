@@ -1,2 +1,2 @@
-max@ws01:~/dz_linux$ echo $SHELL
-/usr/bin/bash
+[Sat Sep 19]max@ws01 grep "^max:" /etc/passwd
+max:x:1001:1001::/home/max:/bin/bash
