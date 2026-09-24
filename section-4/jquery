@@ -1,0 +1,5 @@
+команда поиска:
+apt search syntax | grep -i jquery
+
+Команда установки:
+sudo apt install -y libjs-jquery-jush
