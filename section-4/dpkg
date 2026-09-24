@@ -1,0 +1,11 @@
+причина ошибки:
+1. изначально команда не срабатывала из-за ошибки в наименовании пакета tor0.3.2.10-1amd64.deb, на самом деле наименование пакета tor_0.3.2.10-1_amd64.deb
+2. После того как я выяснил правильное наименование пакета я приступил к установке: sudo dpkg -i /home/max/linux-vm/4/tor_0.3.2.10-1_amd64.deb но обновление не произошло так как dpkg не умеет работать с зависимостями: dpkg: dependency problems prevent configuration of tor:
+ tor depends on libevent-2.1-6 (>= 2.1.8-stable); however:
+  Package libevent-2.1-6 is not installed.
+ tor depends on libssl1.1 (>= 1.1.0); however:
+  Package libssl1.1 is not installed.
+
+Как исправил:
+использовал "умный" менеджер уставовки apt с определенными параметрами, чтоб он сам проверил зависимости, скачал недостающие обновления и произвел установку
+команда установки: sudo apt --fix-broken install
