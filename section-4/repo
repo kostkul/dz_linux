@@ -1,7 +1,7 @@
 Задача: Отключить репозиторий jammy-security universe.
 
 Описание действий:
-1. С помощью команды grep был найден файл конфигурации /etc/apt/sources.list, содержащий список подключенных репозиториев.
+1. С помощью команды grep был найден файл конфигурации /etc/apt/sources.list, содержащий список подключенных репозиториев.Дополнительно проверено, что нет интересующего нас репозитория: grep -r jammy-security /etc/apt/
 2. Для автоматического отключения (комментирования) нужной строки без ручного редактирования файла использована утилита sed с флагом -i (in-place):
 sudo sed -i 's|^deb http://security.ubuntu.com/ubuntu jammy-security universe|# deb http://security.ubuntu.com/ubuntu jammy-security universe|' /etc/apt/sources.list
 3. Для применения изменений и обновления локальной базы пакетов была выполнена команда:
