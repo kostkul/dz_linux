@@ -1,0 +1,1 @@
+grep "^[[:space:]]*[0-9]" copyright > ~/dz_linux/section-5/strings
