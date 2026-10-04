@@ -1,1 +1,1 @@
-find ~/owner/ -perm u=r
+sudo find ~/owner/ -perm u=r
