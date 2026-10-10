@@ -1,0 +1,5 @@
+sudo ip route add 1.1.1.0/24 via 172.20.236.10
+1.1.1.0/24 via 172.20.236.10 dev enp0s8 
+169.254.0.0/16 dev enp0s8 scope link metric 1000 
+172.20.236.0/24 dev enp0s8 proto kernel scope link src 172.20.236.10 
+192.168.56.0/24 dev enp0s8 proto kernel scope link src 192.168.56.105 metric 100 

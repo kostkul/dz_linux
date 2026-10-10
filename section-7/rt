@@ -1,0 +1,2 @@
+route -n | grep -E '^0.0.0.0|^default' > rt
+0.0.0.0         10.0.2.2        0.0.0.0         UG    100    0        0 enp0s3

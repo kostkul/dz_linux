@@ -1,0 +1,15 @@
+ 1?: [LOCALHOST]                      pmtu 1500
+ 1:  NX32U.lan                                             0.909ms 
+ 1:  NX32U.lan                                             0.922ms 
+ 2:  NX32U.lan                                             0.577ms pmtu 1472
+ 2:  p161-105.samaralan.ru                                 1.480ms 
+ 3:  p161-217.samaralan.ru                                 2.113ms asymm  4 
+ 4:  p160-122.samaralan.ru                                 1.874ms 
+ 5:  128.75.225.20                                         2.716ms 
+ 6:  mx01.DirectNet.gldn.net                              21.777ms 
+ 7:  128.75.225.106                                       21.250ms 
+ 8:  no reply
+ 9:  no reply
+10:  no reply
+     Too many hops: pmtu 1472
+     Resume: pmtu 1472 
