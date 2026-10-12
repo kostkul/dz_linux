@@ -1,0 +1,1 @@
+sudo umount /mnt/data; sudo sgdisk -d 1 /dev/vdb

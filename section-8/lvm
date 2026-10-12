@@ -1,0 +1,7 @@
+sudo pvcreate /dev/vdb
+sudo vgcreate volume1 /dev/vdb
+sudo lvcreate -l 100%FREE -n storage volume1
+sudo mkfs.xfs /dev/volume1/storage
+sudo mkdir -p /storage
+sudo mount /dev/volume1/storage /storage
+echo '/dev/volume1/storage /storage xfs defaults 0 0' | sudo tee -a /etc/fstab > /dev/null
